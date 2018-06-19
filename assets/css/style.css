@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
+/* ---------------------------------------fonts--------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/* ----------------------------------Carousel---------------------------------- */
+/* ---------------------------------------------------------------------------- */
+.owl-controls .owl-buttons div {
+	position: absolute;
+	color:#777;
+	opacity: 0.7;
+}
+.owl-carousel:hover .owl-buttons div {
+	color:#fff;
+}
+.owl-controls .owl-buttons .owl-prev {
+	left: 10px;
+	top: 50%;
+}
+.owl-controls .owl-buttons .owl-next {
+	right: 10px;
+	top: 50%;
+}
+.owl-carousel{
+	margin-bottom: 20px;
+}
+.owl-carousel .owl-buttons div i {
+	font-size: 40px;
+	margin: -20px 0 0;
+}
+.owl-wrapper .item img{
+        width: 100%;
+    }
+body{
+	background-color: #252527;
+}
+a{
+	text-decoration: none;
+	color: white;
+	font-family: Open Sans;
+}
+header{
+	position: relative;
+}
+h1,h2,h3,h4,h5,h6{
+	color: #333333;
+	font-family: Open Sans;
+}
+.ico{
+	display: none;
+}
+p{
+	color: #333333;
+	font-family: Open Sans;
+	line-height: 25px;
+}
+hr{
+	border: none;
+	border-bottom: 1px solid #dddddd;
+}
+nav{
+	float: right;
+}
+nav ul{
+	display: flex;
+}
+nav ul li{
+	position: relative;
+	margin-right: 20px;
+}
+.last-li{
+	margin-right: 130px;
+}
+nav ul li a{
+	font-family: Open Sans;
+	font-weight: 700;
+	display: block;
+	text-transform: uppercase;
+	padding: 22px 20px;
+	transition: all 0.9s ease;
+}
+nav ul li a:before{
+	content:"";
+	z-index: -2;
+	position: absolute;
+	top: 0;
+	width: 0;
+	right: 0;
+	background-color:#f44336;
+	height: 100%;
+	transition: all 0.5s ease;
+	opacity: 0;
+	text-align: center;
+}
+nav ul li a:hover:before{
+	width: 100%;
+	opacity: 1;
+}
+nav ul li.current a{
+	background-color:#f44336;
+}
+.container{
+	max-width: 1360px;
+	margin: 0 auto;
+	background-color: white;
+}
+.logo{
+	float: left;
+}
+.search{
+	margin-top: 12px;
+	float: right;
+}
+.search input{
+	border: none;
+	border: 1px solid #444444;
+	width: 258px;
+	height: 40px;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+.img-area{
+	display: flex;
+	flex-wrap: wrap;
+}
+.img-area img{
+	width: 100%;
+}
+.one-fourth{
+	width: 25%;
+}
+
+figure p{
+	opacity: 0;
+	color:white;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	border-radius: 100%;
+	transform: scale(0);
+	transition: all .5s ease;
+}
+figure:hover p{
+	border-radius: 0;
+	transform: scale(1);
+	width: 100%;
+	opacity: 1;
+}
+figure{
+	position: relative;
+}
+figure span{
+	text-align: center;
+	opacity: 0.5;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+.img-area figure span img{
+	width: 50%;
+	margin: 25% auto;
+}
+.img-area figure span.farari img {
+	margin: 15% 0;
+}
+.survice{
+	text-align: center;
+}
+.survice h1{
+	font-size: 35px;
+	margin-bottom: 18px;
+}
+.img-work{
+	text-align: center;
+	display: flex;
+}
+
+.img-work img{
+	width: 95%;
+}
+.img-work h1{
+	font-size: 20px;
+	font-weight: 600;
+	margin: 24px 0 18px;
+}
+a.magic{
+	background-color: #f44336;
+	padding: 18px 25px;
+	display: inline-block;
+	margin: 36px 0 50px;
+	border-radius: 25px;
+	transition: all 0.5s ease;
+}
+a.magic:hover{
+	border-radius: 0;
+	box-shadow: 0 0 20px #333333;
+}
+.flex{
+	display: flex;
+}
+.lastest-blog{
+	width: 60%;
+	margin-right: 2%;
+}
+.lastest-comment{
+	width: 35%;
+}
+.blog-work h1{
+	font-size: 30px;
+	font-weight: 600;
+}
+.blog-work h2{
+	font-size: 20px;
+	font-weight: 600;
+	margin: 34px 0 22px;
+}
+.blog-work h3{
+	font-weight: 600;
+}
+.blog-work h3 span{
+	color: #be0a0a;
+}
+.blog-work p{
+	font-size: 13px;
+	margin-top: 40px;
+}
+.comment-work{
+	background-color: #fafafa;
+	padding: 4%;
+	margin-bottom: 30px;
+}
+.comment-work h1{
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+.comment-work p{
+	margin-bottom: 25px;
+	font-size: 17px;
+}
+footer{
+	max-width:  1280px;
+	margin: 0 auto;
+	text-align: center;
+}
+.copy{
+	color: white;
+	display: block;
+	float: left;
+	margin-top: 30px;
+}
+.policy{
+	float: right;
+	color: white;
+	margin-top: 45px;
+}
+.ft-a a{
+	margin: 40px 4px 10px;
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: #f44336;
+	border: 1px solid transparent;
+	line-height: 40px;
+	border-radius: 50%;
+	transition: all 0.5s ease;
+}
+footer a:hover{
+	background-color: white;
+	color: black;
+}
+/* Style the Image Used to Trigger the Modal */
+#myImg,#myImg02,#myImg03,#myImg04 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover,#myImg02:hover,#myImg03:hover,#myImg04:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 60%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption,#caption02,#caption03,#caption04 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption,#caption02,#caption03,#caption04 { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 768px){
+    .modal-content {
+        width: 100%;
+    }
+    .ico{
+    	position: absolute;
+    	top: 10px;
+    	right: 10px;
+    	display: block;
+    	z-index: 1;
+    }
+    nav:hover ul{
+    	display: block;
+    }
+    nav ul{
+    	background-color: blue;
+    	z-index: 2;
+    	position: absolute;
+    	padding: 10px 0;
+    	text-align: center;
+    	top: 40px;
+    	right: 10px;
+    	display: none;
+    	width: 50%;
+    }
+    nav ul li{
+    	width: 100%;
+    }
+    .one-fourth{
+    	margin: 0;
+    	padding: 0;
+    	width: 100%;
+    }
+    .img-area,.img-work{
+    	width: 100%;
+    	display: block;
+    }
+    .survice{
+    	margin: 0;
+    	text-align: center;
+    }
+    .survice h1{
+    	font-size: 15px;
+    }
+    .flex{
+    	width: 100%;
+    	text-align: center;
+    	margin: 0 auto;
+    	padding: 0;
+    	display: block;
+    }
+    .logo{
+    	width: 100%;
+    }
+    .logo img{
+    	width: 70%;
+    }
+    .search{
+    	width: 100%;
+    }
+    .search input{
+    	width: 60%;
+    }
+
+    a.magic{
+    }
+    .lastest-blog{
+    	width: 100%;
+    	text-align: center;
+    }
+    .lastest-blog h1{
+    	font-size: 20px;
+    }
+    .lastest-comment{
+    	width: 100%;
+    }
+    footer{
+    	margin: 0;
+    	padding: 0;
+    	width: 100%;
+    }
+    .copy{
+    	width: 100%;
+    	margin: 0;
+    	padding: 0;
+    }
+    .ft-a{
+    	 margin: 0;
+    	padding: 0;
+    	width: 100%;
+
+    }
+    .policy{
+    	    	margin: 0;
+    	padding: 0;
+    	width: 100%;
+    }
+}
+img{
+	max-width: 100%;
+}
